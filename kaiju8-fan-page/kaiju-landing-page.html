@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Kaiju Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="image-container">
+  <h1><strong>Kaiju No 8</strong></h1>
+  </div>
+  <div class="image-container">
+  <img id="kaijuImage" src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/e66d5a8f5167c8bc7a7fd5baa52961c5.jpg" height="400px" width="750px" />
+  </div>
+  <br>
+  
+<br>
+  <a class="tab1" href="human-form.html">Human Form Abilities</a>
+  <a class="tab2" href="kaiju-form.html">Kaiju Form Abilities</a>
+  
+  <script>
+  const images = [
+    "https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/e66d5a8f5167c8bc7a7fd5baa52961c5.jpg",
+    "https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2024/07/kaiju-no-8.jpg",
+    "https://fwmedia.fandomwire.com/wp-content/uploads/2024/06/02050719/kaiju-no-8.jpg"
+  ];
+
+  let currentIndex = 0;
+  const imgElement = document.getElementById("kaijuImage");
+
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % images.length;
+    imgElement.src = images[currentIndex];
+  }, 3000); // change image every 3 seconds
+</script>
+</body>
+</html>

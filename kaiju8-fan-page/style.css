@@ -1,0 +1,129 @@
+/*This is the start of the main pages code*/
+body {
+  background-color: rgb(76, 233, 220);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+      border-radius: 10px solid black;
+      margin: 20px 0;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.image-container {
+  text-align: center; /* centers inline/inline-block children */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+#kaijuImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-container img {
+  max-width: 100%;
+  border-radius: 10px;
+  height: auto;
+  object-fit: contain;
+  display: inline-block; /* needed for text-align center */
+}
+
+
+/* Tab Links */
+.tab1, .tab2 {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ff9800;
+  color: #000;
+  border: solid 3px;
+  border-radius: 15px;
+  width: 250px;
+  margin: 10px;
+  padding: 10px 15px;
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.tab1:hover, .tab2:hover {
+      background-color: #a0f3a0;
+    }
+
+h1 {
+  background-color: #ff9800;
+  border-radius: 100px;
+  border: solid 5px;
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  display: inline-block;
+}
+
+/* Character Forms pages begin here */
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+h3 {
+  background-color: #ff9800;
+  border-radius: 100px;
+  border: solid 5px;
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  display: inline-block;
+}
+
+h4 {
+  background-color: rgb(98, 143, 143);
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 500px;
+  margin: 10px auto;
+  padding: 10px;
+  color: black;
+}
+
+/* Abilities Buttons */
+.abilities {
+  color: #000;
+  background-color: #ff9800;
+  border: solid 5px rgb(1, 82, 82);
+  border-radius: 15px;
+  width: 100%;
+  margin: 10px auto;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  display: block;
+}
+
+/* Revealed Ability Text */
+.ability-text {
+  display: none;
+  width: 480px;
+  margin: 5px auto 15px auto;
+  padding: 8px 12px;
+  background-color: #f1de8ee7;
+  border-left: 4px solid goldenrod;
+  font-style: italic;
+  border-radius: 8px;
+}
+
+.abilities:hover {
+  background-color: goldenrod;
+}
